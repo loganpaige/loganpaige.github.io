@@ -27,7 +27,7 @@ function drawBall(context) {
 ballX = ballX + dx;
 ballY = ballY + dy;
 // If we've hit the left or right, turn around
-if (ballY > CANVAS_WIDTH || ballX < 0) {
+if (ballX > CANVAS_WIDTH || ballX < 0) {
 dx = -dx;
 }
 // If we've hti the top or bottom, turn around
