@@ -6,13 +6,14 @@
 <body>
 <h1 id = "main-heading">hello world!</h1>
 
+  
+  <script src = "https://code.jquery.com/jquery-2.1.0.js"></script>
+  
 <script>
-var headingElement = document.getElementById("main-heading"); 
-//finding the h1 elemant wiht the id "main-heading"
-console.log(headingElement.innerHTML);
 var newHeadingText = prompt("please provide a new heading:");
 //asking for the neew header
-headingElement.innerHTML = newHeadingText;
+$("#main-heading").innerHTML = newHeadingText;
+  // set new text
 </script>
 
 </body>
