@@ -23,11 +23,11 @@ $("#main-heading").text(newHeadingText);
   }
   
   $("body").append("<h1> this will fade out! </h>");
-  $("h1").fadeOut(1500).fadeIn(1500);
-  $("h1").fadeOut(1500).fadeIn(1500);
-  $("h1").fadeOut(1500).fadeIn(1500);
-  $("h1").fadeOut(1500).fadeIn(1500);
-  $("h1").fadeOut(1500).fadeIn(1500);
+  
+  for(var i = 0; i < 5; i++)
+  {
+    $("h1").fadeOut(1500).fadeIn(1500);
+  }
   $("h1").slideUp(1000).slideDown(1000);
   
 </script>
