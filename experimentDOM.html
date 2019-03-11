@@ -44,6 +44,17 @@ $("#main-heading").text(newHeadingText);
   var timeoutId = setTimeout(doHomeworkAlarm, 60000);
   clearTimeout(timeoutId);
   
+  var counter = 1;
+  
+  var printMessage = function()
+  {
+    $("body").append("<p> you have been staring"+
+                     " at your screen for "
+                     +counter+" seconds. </p>");
+  };
+  
+  var intervalId = setInterval(printMessage, 1000);
+  
 </script>
 
 </body>
