@@ -51,6 +51,7 @@ $("#main-heading").text(newHeadingText);
     $("body").append("<p> you have been staring"+
                      " at your screen for "
                      +counter+" seconds. </p>");
+    counter++;
   };
   
   var intervalId = setInterval(printMessage, 1000);
