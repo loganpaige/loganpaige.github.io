@@ -1,0 +1,35 @@
+<DOCTYPE html>
+<html>
+
+<head>
+<title>interactive programming</title>
+</head>
+
+<body>
+<h1 id ="heading">hello world!</h1>
+
+<script src = "https://code.jquery.com/jquery-2.1.0.js"></script>
+
+<script>
+
+var leftOffSet = 0;
+
+var moveHeading = function()
+{
+$("#heading").offset({left: leftOffSet}); //set the left offset 
+
+leftOffSet++; //update (add to) leftOffSet variable
+
+if(leftOffSet > 200)
+{
+leftOffSet = 0; //send back to the beginning (left of page)
+}
+
+};
+
+setInterval(moveHeading, 30); //remember 1000 is 1 second
+
+</script>
+</body>
+
+</html>
