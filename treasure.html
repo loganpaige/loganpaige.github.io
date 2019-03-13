@@ -14,7 +14,25 @@ src="https://nostarch.com/images/treasuremap.png">
 <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 
 <script>
-//code goes here
+var getRandomNumber = function(size)
+{
+  return Math.floor(Math.random() * size);
+};
+  
+  var width = 400;
+  var height = 400;
+  
+  var treasure = {
+    x: getRandomNumber(width),
+    y: getRandomNumber(height)
+  };
+  
+  var getDistanceToTreasure = function(event, treasure)
+  {
+    var xDifference = event.offsetX - treasure.x;
+    var yDifference = event.offsety - treasure.y;
+    return Math.sqrt((xDifference * xDifference) +
+                     ((yDifference *
 </script>
 
 </body>
