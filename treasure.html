@@ -37,12 +37,51 @@ var getRandomNumber = function(size)
                       
        var clicks = 0;
                       
-                      $("#map").click(function (event){
+      $("#map").click(function (event){
       //click handler code goes here
-      //check for distance
-      //check if they are close enough to find the treasure
-      //if they have 'found it' tell them how many clicks it took
-      ////give a hint if they are too far away
+        //check for distance
+        var dist = getDistanceToTreasure(event, treasure);
+        //check if they are close enough to find the treasure
+        //if they have 'found it' tell them how many clicks it took
+        if (dist <= 10)
+        {
+          alert("You found the treasure. It only took you " + clicks+ " clicks!");
+          $("#distance").setText("You are "+dist+" pixels away!");
+        }else {
+          ////give a hint if they are too far away
+          hint(dist);
+        });
+      
+      var hint = function(dist)
+      {
+        if(dist <= 20)
+        {
+          alert("You're on fire, move slightly closer to find the treasure!");
+        }else if (dist <= 50)
+       {
+          alert("You are very hot! Move a little closer to find the treasure!")
+        }else if (dist <= 90)
+       {
+          alert("You are really warm! Move closer to find the treasure the treasure!")
+        }else if (dist <= 140)
+       {
+          alert("You are warm! Move a little closer to find the treasure!")
+        }else if (dist <= 200)
+       {
+          alert("You are cool. Move closer to find the treasure!")
+        }else if (dist <= 270)
+       {
+          alert("You are very cool. Move closer to find the treasure!")
+        }else if (dist <= 350)
+       { 
+          alert 
+        }else if (dist <= 
+       { 
+        
+        
+        
+        $("#distance").setText("You are "+dist+" pixels away!");
+      };
       clicks++
     });                 
 </script>
