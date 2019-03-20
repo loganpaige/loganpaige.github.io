@@ -32,8 +32,8 @@ var getRandomNumber = function(size)
     var xDifference = event.offsetX - treasure.x;
     var yDifference = event.offsety - treasure.y;
     return Math.sqrt((xDifference * xDifference) +
-                     ((yDifference * yDifference);
-  }
+                     (yDifference * yDifference));
+  };
                       
        var clicks = 0;
                       
@@ -46,7 +46,7 @@ var getRandomNumber = function(size)
         if (dist <= 10)
         {
           alert("You found the treasure. It only took you " + clicks+ " clicks!");
-          $("#distance").setText("You are "+dist+" pixels away!");
+          $("#distance").text("You are "+dist+" pixels away!");
         }else {
           ////give a hint if they are too far away
           hint(dist);
@@ -59,27 +59,27 @@ var getRandomNumber = function(size)
           alert("You're on fire! Move slightly closer to find the treasure!");
         }else if (dist <= 50)
        {
-          alert("You are very hot! Move a little closer to find the treasure!")
+          alert("You are very hot! Move a little closer to find the treasure!");
         }else if (dist <= 90)
        {
-          alert("You are really warm! Move closer to find the treasure the treasure!")
+          alert("You are really warm! Move closer to find the treasure the treasure!");
         }else if (dist <= 140)
        {
-          alert("You are warm! Move a little closer to find the treasure!")
+          alert("You are warm! Move a little closer to find the treasure!");
         }else if (dist <= 200)
        {
-          alert("You are cool. Move closer to find the treasure!")
+          alert("You are cool. Move closer to find the treasure!");
         }else if (dist <= 270)
        {
-          alert("You are very cool. Move closer to find the treasure!")
+          alert("You are very cool. Move closer to find the treasure!");
         }else if (dist <= 350)
        { 
-          alert("You are freezing. Move a lot closer to find the treasure!")
+          alert("You are freezing. Move a lot closer to find the treasure!");
         }else if (dist <= 399)
        { 
 
         $("#distance").setText("You are "+dist+" pixels away!");
-      };
+      }
       clicks++
     });                 
 </script>
