@@ -10,6 +10,7 @@
 src="https://nostarch.com/images/treasuremap.png">
 
 <p id="distance"></p>
+  <p id="message"></p>  
 
 <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 
@@ -45,7 +46,7 @@ var getRandomNumber = function(size)
         //if they have 'found it' tell them how many clicks it took
         if (dist <= 10)
         {
-          alert("You found the treasure. It only took you " + clicks+ " clicks!");
+         $("#message").text("You found the treasure. It only took you " + clicks+ " clicks!");
           $("#distance").text("You are "+dist+" pixels away!");
         }else {
           ////give a hint if they are too far away
@@ -58,25 +59,25 @@ var getRandomNumber = function(size)
       {
         if(dist <= 20)
         {
-          alert("You're on fire! Move slightly closer to find the treasure!");
+          $("#message").text("You're on fire! Move slightly closer to find the treasure!");
         }else if (dist <= 50)
        {
-          alert("You are very hot! Move a little closer to find the treasure!");
+          $("#message").text("You are very hot! Move a little closer to find the treasure!");
         }else if (dist <= 90)
        {
-          alert("You are really warm! Move closer to find the treasure the treasure!");
+         $("#message").text("You are really warm! Move closer to find the treasure the treasure!");
         }else if (dist <= 140)
        {
-          alert("You are warm! Move a little closer to find the treasure!");
+          $("#message").text("You are warm! Move a little closer to find the treasure!");
         }else if (dist <= 200)
        {
-          alert("You are cool. Move closer to find the treasure!");
+          $("#message").text("You are cool. Move closer to find the treasure!");
         }else if (dist <= 270)
        {
-          alert("You are very cool. Move closer to find the treasure!");
+          $("#message").text("You are very cool. Move closer to find the treasure!");
         }else if (dist <= 350)
        { 
-          alert("You are freezing. Move a lot closer to find the treasure!");
+          $("#message").text("You are freezing. Move a lot closer to find the treasure!");
         }else if (dist <= 399)
        { 
 
