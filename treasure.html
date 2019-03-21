@@ -50,7 +50,9 @@ var getRandomNumber = function(size)
         }else {
           ////give a hint if they are too far away
           hint(dist);
-        });
+        }
+        clicks++
+      });
       
       var hint = function(dist)
       {
