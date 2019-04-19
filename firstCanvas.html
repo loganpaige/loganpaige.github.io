@@ -11,12 +11,13 @@ var canvas = document.getElementById("canvas"); // look for canvas
 var ctx = canvas.getContext("2d"); // tells javascript that the drawing will be 2 dimensional 
   for(var i = 0; i < 5; i++)
   
+    ctx.fillStyle="F3B5F1";
   ctx.fillRect(0, 0, 133, 400);
-  ctx.fillStyle="F3B5F1";
-  ctx.fillRect(133, 0, 133, 400);
   ctx.fillStyle="F3F763";
+  ctx.fillRect(133, 0, 133, 400);
+    ctx.fillStyle="95CAF9";
   ctx.fillRect(266, 0, 133, 400);
-  ctx.fillStyle="95CAF9";
+  
   
 ctx.fillRect(100, 0, 50, 50); 
 ctx.fillRect(115, 50, 20, 20);  
