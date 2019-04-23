@@ -19,11 +19,15 @@ var ctx = canvas.getContext("2d"); // tells javascript that the drawing will be 
   ctx.fillRect(266, 0, 133, 400);
   
   ctx.strokeStyle="gray";
-  ctx.lineWidth = 2;
+  ctx.lineWidth = 4;
   ctx.strokeRect(50, 0, 40, 40);
 ctx.beginPath();
   ctx.moveTo(70, 40);
   ctx.lineTo(70, 122);
+  ctx.moveTo(70, 68);
+  ctx.lineTo(28, 35);
+  ctx.moveTo(70, 68);
+  ctx.lineTo(98,28);
 ctx.stroke(); 
   
 </script>
