@@ -18,22 +18,53 @@ var ctx = canvas.getContext("2d"); // tells javascript that the drawing will be 
     ctx.fillStyle="pink";
   ctx.fillRect(266, 0, 133, 400);
   
-  ctx.strokeStyle="gray";
-  ctx.lineWidth = 4;
-  ctx.strokeRect(50, 0, 40, 40);
-ctx.beginPath();
-  ctx.moveTo(70, 40);
-  ctx.lineTo(70, 122);
-  ctx.moveTo(70, 68);
-  ctx.lineTo(28, 35);
-  ctx.moveTo(70, 68);
-  ctx.lineTo(108,35);
-  ctx.moveTo(70, 122);
-  ctx.lineTo(34, 150);
-  ctx.moveTo(70, 122);
-  ctx.lineTo(106, 150);
-ctx.stroke(); 
-  
-</script>
-</body>
+ 
+  ctx.strokeStyle="grey"
+   ctx.lineWidth="3"
+      
+   var head = function(){
+     ctx.strokeRect(40 , 0, 20, 20);// head
+   };
+      
+   var body = function(){
+    ctx.beginPath();
+      ctx.moveTo(50,20);
+      ctx.lineTo( 50, 60);
+    ctx.stroke();
+   }
+   var leftArm = function(){
+     ctx.beginPath();
+      ctx.moveTo( 50, 35);// left arm
+      ctx.lineTo( 80, 11);
+     ctx.stroke();
+   }
+      var rightArm = function(){
+        ctx.beginPath();
+        ctx.moveTo( 50, 35);// right arm
+      ctx.lineTo( 20, 11);
+        ctx.stroke();
+      }
+      var rightLeg = function(){
+        ctx.beginPath();
+        ctx.moveTo( 50, 60);// right leg
+      ctx.lineTo( 80, 85);
+        ctx.stroke
+      }
+      var leftLeg = function(){
+        ctx.beginPath();
+        ctx.moveTo( 50, 60);// left arm
+      ctx.lineTo( 20, 85);
+       ctx.stroke();
+      }
+      
+      ctx.beginPath();//to the gallows
+      ctx.moveTo(10, 200);
+      ctx.lineTo(10, 40);
+      ctx.moveTo(10, 40);
+      ctx.lineTo(85, 40);
+      ctx.moveTo(85, 40);
+      ctx.lineTo(85, 55);
+      ctx.stroke();
+    </script>
+  </body>
 </html>
