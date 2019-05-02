@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Canvas</title>
-</head>
-<body>
-<canvas id="canvas" width="400" height="400"></canvas>
-
-<script>
-var canvas = document.getElementById("canvas"); // look for canvas
-var ctx = canvas.getContext("2d"); // tells javascript that the drawing will be 2 dimensional 
-  for(var i = 0; i < 5; i++)
-  
-    ctx.fillStyle="purple";
-  ctx.fillRect(0, 0, 133, 400);
-  ctx.fillStyle="yellow";
-  ctx.fillRect(133, 0, 133, 400);
-    ctx.fillStyle="pink";
-  ctx.fillRect(266, 0, 133, 400);
-  
- 
-  ctx.strokeStyle="grey"
-   ctx.lineWidth="3"
+  <head>
+    <title>Canvas</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    
+    <script>
+      var canvas = document.getElementById("canvas"); // look for canvas
+      var ctx = canvas.getContext("2d"); // tells javascript that the drawing will be 2 dimensional
+      
+      ctx.fillStyle="blue";
+      ctx.fillRect(0, 0, 133, 400); // first rectangle
+      
+      ctx.fillStyle="pink";
+      ctx.fillRect(133, 0, 133, 400); // second rectangle
+      
+      ctx.fillStyle="green";
+      ctx.fillRect(266, 0, 134, 400); // third rectangle
+      
+  ctx.strokeStyle="black"
+   ctx.lineWidth="1"
       
    var head = function(){
-     ctx.strokeRect(40 , 0, 20, 20);// head
-   };
+     ctx.strokeRect(65 , 55, 40, 40);// head
+   }
       
    var body = function(){
     ctx.beginPath();
-      ctx.moveTo(50,20);
-      ctx.lineTo( 50, 60);
+      ctx.moveTo(85,95);
+      ctx.lineTo( 85, 181);
     ctx.stroke();
    }
    var leftArm = function(){
      ctx.beginPath();
-      ctx.moveTo( 50, 35);// left arm
-      ctx.lineTo( 80, 11);
+      ctx.moveTo( 85, 131);// left arm
+      ctx.lineTo( 53, 35);
      ctx.stroke();
    }
       var rightArm = function(){
         ctx.beginPath();
-        ctx.moveTo( 50, 35);// right arm
-      ctx.lineTo( 20, 11);
+        ctx.moveTo( 85, 131);// right arm
+      ctx.lineTo( 73, 35);
         ctx.stroke();
       }
       var rightLeg = function(){
         ctx.beginPath();
-        ctx.moveTo( 50, 60);// right leg
-      ctx.lineTo( 80, 85);
+        ctx.moveTo( 85, 181);// right leg
+      ctx.lineTo( 55, 206);
         ctx.stroke
       }
       var leftLeg = function(){
         ctx.beginPath();
-        ctx.moveTo( 50, 60);// left arm
-      ctx.lineTo( 20, 85);
+        ctx.moveTo( 85, 181);// left arm
+      ctx.lineTo( 115, 206);
        ctx.stroke();
       }
       
@@ -68,3 +68,4 @@ var ctx = canvas.getContext("2d"); // tells javascript that the drawing will be 
     </script>
   </body>
 </html>
+
